@@ -4,62 +4,67 @@
     <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
     <title>Sian Matthews Portfolio</title>    
 </head>
-<body>
 
 
 
-    <div class="header">
+<body class="template-page">
+
+    <header>
         <div class="overlay">
-            <h1 id = "header-title">Main Heading</h1>
-            <h2>Sub Heading</h2>
+            <div class="container">
+                <div class="centered">
+                    <h1 id = "header-title">Main Heading</h1>
+                    <h2>Sub heading</h2>                
+                </div>            
+            </div>
         </div>
-    </div>
+    </header>
 
-    <div class="navbar">
-        <a href="index.html"><h3>About Me</h3></a>
+    <nav>
+        <a href="./index.html"><h3>About Me</h3></a>
         <h3>Projects</h3>
         <h3>Crafts</h3>
-        <h3>Maths Resources</h3>
-    </div>
+        <a href="./maths-resources.html"><h3>Maths Resources</h3></a>
+        <h3 id="current-page-nav">New Page</h3>
+    </nav>
 
-    <div class="sidebar">
-        <img class="content-image" id="about-me-image" src="resources/images/profile-pic.jpg" alt="Sian Matthews Portrait"/>
-        <a>Who am I?</a>
-        <a>Family</a>
-        <a>Hobbies</a>
-    </div>
-   
-    <div class="main-body">
+    <div class="content">
 
-
-        <div class="section">
-            <h4>First section title</h4>
-            <div class="section-content">
-                <div id="first-section-paragraph">
-                    <p>
-                       First section content
-                    </p>
+        <div class="sidebar">
+            <div class="overlay">
+                <div class="sidebar-content">
+                    <img class="content-image" id="about-me-image" src="resources/images/profile-pic.jpg" alt="Sian Matthews Portrait"/>
+                    <a>Section 1 header</a>
+                    <a>Section 2 header</a>
+                    <a>Section 3 header</a>
                 </div>
-                <img class="section-image" src="first section pic" alt="image"/>
+                <div class="sidebar-tab"></div>
             </div>
         </div>
+    
+        <div class="main-body">
 
-        <div class="section">
-            <h4>second section title</h4>
-            <div class="section-content">
-                <div id="second-section-paragraph">
-                    <p>
-                       Firssecondt section content
-                    </p>
-                </div>
-                <img class="section-image" src="second section pic" alt="image"/>
+            <p class="introduction">
+                In this section, you will find a variety of resources that I have created for teaching maths. This includes PowerPoints for lessons, 
+                Geogebra animations, video tutorials, blogs and apps.
+            </p>
+
+            <div class="section" id="Section-header">  
+                <h4 class="section-header" id="Section-header">About Me</h4>
+                <div class="section-content" id="Section-content">
+                    <div class="section-content-main" id="Section-writing">
+                        <p></p>
+                    </div>
+                    <div class="section-content-right"><img class="content-image" id="about-me-image" src="resources/images/profile-pic.jpg" alt="Sian Matthews Portrait"/></div>
+                </div> 
             </div>
-        </div>
 
+        </div>
 
     </div>
 
-    <div class="footer">
+
+    <footer>
         <div class="overlay">
             <div id="footer-buttons">
                 <a href = "https://www.linkedin.com/in/sian-matthews-4aab4755/" target = "_blank"><button>LinkedIn</button></a>
@@ -69,7 +74,7 @@
                 <a href = "https://www.youtube.com/channel/UCFPUEHFAgnkp86HGVkc3l9A" target="_blank"><button>OxMath Tutorials</button></a>
             </div>
         </div>
-    </div>
+    </footer>
 
 </body>
 </html>

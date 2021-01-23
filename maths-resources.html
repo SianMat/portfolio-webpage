@@ -4,78 +4,104 @@
     <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
     <title>Sian Matthews Portfolio</title>    
 </head>
-<body>
 
 
 
-    <div class="header">
+<body class="template-page">
+
+    <header>
         <div class="overlay">
-            <div class="centered">
-                <h1 id = "header-title">Main Heading</h1>
-                <h2>Sub Heading</h2>
+            <div class="container">
+                <div class="centered">
+                    <h1 id = "header-title">Maths Resources</h1>
+                    <h2>Teaching the next generation</h2>                
+                </div>            
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="navbar">
-        <a href="index.html"><h3>About Me</h3></a>
+    <nav>
+        <a href="./index.html"><h3>About Me</h3></a>
         <h3>Projects</h3>
         <h3>Crafts</h3>
         <h3 id="current-page-nav">Maths Resources</h3>
-    </div>
+    </nav>
 
+    <div class="content">
 
-    <div class="sidebar">
-        <div class="overlay">
-            <div class="sidebar-content">
-                <img class="content-image" id="about-me-image" src="resources/images/profile-pic.jpg" alt="Sian Matthews Portrait"/>
-                <a>Kiducation</a>
-                <a>Oxmath Tutorials</a>
-                <a>PowerPoints</a>
-                <a>Geogebra</a>
-                <a>TES</a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="main-body">
-
-
-        <p class="introduction">
-            In this section, you will find a variety of resources that I have created for teaching maths. This includes PowerPoints for lessons, 
-            Geogebra animations, video tutorials, blogs and apps.
-        </p>
-
-        <div class="section">
-            <h4>First section title</h4>
-            <div class="section-content">
-                <div id="introduction">
-                    <p>
-                       In this section, you will find a variety of resources that I have created for teaching maths. This includes PowerPoints for lessons, 
-                       Geogebra animations, video tutorials, blogs and apps.
-                    </p>
+        <div class="sidebar">
+            <div class="overlay">
+                <div class="sidebar-content">
+                    <img class="content-image" id="about-me-image" src="resources/images/profile-pic.jpg" alt="Sian Matthews Portrait"/>
+                    <a href="#kiducation-section">Kiducation</a>
+                    <a href="#oxmath-tutorials-section">Oxmath Tutorials</a>
+                    <a href="#powerpoints-section">PowerPoints</a>
+                    <a href="#geogebra-section">Geogebra</a>
+                    <a href="#tes-section">TES</a>
                 </div>
-                <img class="section-image" src="first section pic" alt="image"/>
+                <div class="sidebar-tab"></div>
             </div>
         </div>
+    
+        <div class="main-body">
 
-        <div class="section">
-            <h4>second section title</h4>
-            <div class="section-content">
-                <div id="second-section-paragraph">
-                    <p>
-                       Firssecondt section content
-                    </p>
-                </div>
-                <img class="section-image" src="second section pic" alt="image"/>
+            <p class="introduction">
+                In this section, you will find a variety of resources that I have created for teaching maths. This includes PowerPoints for lessons, 
+                Geogebra animations, video tutorials, blogs and apps.
+            </p>
+
+            <div class="section" id="kiducation-section">               
+                <h4 class="section-header" id="kiducation-header">Kiducation</h4>
+                <div class="section-content" id="kiducation-content">
+                    <div class="section-content-main" id="kiducation-writing">
+                        <p></p>
+                    </div><div class="section-content-right"><img class="content-image" id="about-me-image" src="resources/images/profile-pic.jpg" alt="Sian Matthews Portrait"/></div>
+                </div> 
             </div>
-        </div>
 
+            <div class="section" id="oxmath-tutorials-section">               
+                <h4 class="section-header" id="oxmath-tutorials-header">Oxmath Tutorials</h4>
+                <div class="section-content" id="oxmath-tutorials-content">
+                    <div class="section-content-main" id="oxmath-tutorials-writing">
+                        <p></p>
+                    </div><div class="section-content-right"><img class="content-image" id="about-me-image" src="resources/images/profile-pic.jpg" alt="Sian Matthews Portrait"/></div>
+                </div> 
+            </div>
+
+            <div class="section" id="powerpoints-section">               
+                <h4 class="section-header" id="powerpoints-header">PowerPoints</h4>
+                <div class="section-content" id="powerpoints-content">
+                    <div class="section-content-main" id="powerpoints-writing">
+                        <p></p>
+                    </div><div class="section-content-right"><img class="content-image" id="about-me-image" src="resources/images/profile-pic.jpg" alt="Sian Matthews Portrait"/></div>
+                </div> 
+            </div>
+
+            <div class="section" id="geogebra-section">               
+                <h4 class="section-header" id="geogebra-header">Geogebra</h4>
+                <div class="section-content" id="geogebra-content">
+                    <div class="section-content-main" id="geogebra-writing">
+                        <p></p>
+                    </div><div class="section-content-right"><img class="content-image" id="about-me-image" src="resources/images/profile-pic.jpg" alt="Sian Matthews Portrait"/></div>
+                </div> 
+            </div>
+
+            <div class="section" id="tes-section">               
+                <h4 class="section-header" id="tes-header">Geogebra</h4>
+                <div class="section-content" id="tes-content">
+                    <div class="section-content-main" id="tes-writing">
+                        <p></p>
+                    </div><div class="section-content-right"><img class="content-image" id="about-me-image" src="resources/images/profile-pic.jpg" alt="Sian Matthews Portrait"/></div>
+                </div> 
+            </div>
+
+
+        </div>
 
     </div>
 
-    <footer class="footer">
+
+    <footer>
         <div class="overlay">
             <div id="footer-buttons">
                 <a href = "https://www.linkedin.com/in/sian-matthews-4aab4755/" target = "_blank"><button>LinkedIn</button></a>

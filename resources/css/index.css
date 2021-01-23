@@ -49,18 +49,7 @@ h4 {
     font-size: 1.5rem;
     width: 300px;
     padding: 5px 0 5px 20px;
-    position:relative;
-    left: -250px;
-    transition-duration: 0.5s;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
-
-h4:hover {
-    left: 0;
-    transition-duration: 0.5s;
-}
-
 
 a {
     color: #45a29e;
@@ -79,12 +68,11 @@ button:hover{
     color:#0B0C10;
     background-color: #45a29e;
     cursor: pointer;
+    transition: color 0.75s, background-color 0.75s;
 }
-
 
 img {
     border: 4px double #45a29e;
-    margin: 0 auto;
 }
 
 nav {
@@ -99,44 +87,16 @@ nav {
     min-width: 550px;
 }
 
-.main-body {
-    height:1700px;
-    width: 85%;
-    margin-left: 15%;
-    font-size: 1.4em;
+#current-page-nav {
+    color: #0B0C10;
+    background-color: #66fcf1;
 }
-
 
 nav h3:hover {
-    color: #1f2833;
-    background-color: #45a29e;
-}
-
-.sidebar {
-    width:15%;
-    height: 100vh;
-    position: sticky;
-    text-align: center;
-    font-size: 1.8vw;
-    float: left;
-    top: 0px;
-    margin-top: -32px;
-    z-index: 10;
-    background-image: url("../images/keyboard.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.sidebar-content {
-    padding: 50px 30px;
-
-}
-
-.sidebar-content a {
-    margin: 20px 0px;
-    display: block;
-    color:#66fcf1;
+    color: #0B0C10 !important;
+    background-color: #45a29e !important;
+    cursor: pointer !important;
+    transition: color 0.5s, background-color 0.5s;
 }
 
 header, footer {
@@ -151,6 +111,7 @@ header, footer {
 
 header {
     height: 300px;
+    border-bottom:#66fcf1 2px solid;
 }
 
 
@@ -158,6 +119,7 @@ footer {
     position: fixed;
     bottom: 0;
     z-index: 10;
+    border-top:#66fcf1 2px solid;
 }
 
 footer button {
@@ -171,68 +133,142 @@ footer button {
     width: 100%;
     height: 100%;
     padding-bottom: 10px;
-    border-bottom: #0B0C10 4px solid;
+}
+
+header .overlay {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .centered {
-    margin: 0;
-    position: relative;
-    top: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(0, -50%);
+    height: fit-content;
+}
+
+.content {
+    display: flex;
+    min-height: 2700px;
+}
+
+.sidebar {
+    width:250px;
+    flex-shrink: 0;
+    height: 100vh;
+    position: sticky;
+    text-align: center;
+    font-size: 1.4rem;
+    top: 0px;
+    margin-top: -32px;
+    z-index: 10;
+    background-image: url("../images/keyboard.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sidebar-content {
+    padding: 50px 30px;
+}
+
+.sidebar-content a {
+    margin: 10px auto;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    display: block;
+    color:#66fcf1;
+    text-decoration: none;
+}
+
+.sidebar-content a:hover {
+    color:#0B0C10;
+    background-color: #45a29e;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;    
+}
+
+
+.sidebar-tab {
+    display: none;
+}
+
+.main-body {
+    font-size: 1.2em;
+    width: 100%;
 }
 
 .introduction {
-    padding: 0 20px;
-    margin: 20px 0;
+    margin: 2% 5%;
+    color: #45a29e;
 }
 
 .section {
     z-index: 1;
-    width: 100%;
-    margin-top: 10px;
+    margin-top: 40px;
 }
+
+.section-header {
+    position:relative;
+    /* left: -250px; */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* .section-header:hover {
+    left: 0;
+    transition: left 0.75s;
+} */
 
 .section-content {
     min-height: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .section-content-main {
     margin: 1% 5%;
-    padding: 20px;
     text-align: center;
     width: 60%;
-    display: inline-block;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
     min-height: 100%;
 }
 
 .section-content-right {
     width: 25%;
     max-height: 100%;
-    margin: 1% 2%;
+    margin: 1% 5%;
     text-align: center;
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 
 #about-me-image {
     filter: grayscale(100%);
-    width: 75%;
-}
-
-#current-page-nav {
-    color: #0B0C10;
-    background-color: #66fcf1;
+    width: 100%;
+    max-width: 300px;
 }
 
 
 
-@media all and (max-device-width: 700px), (max-width: 700px){
+
+/*small devivces*/
+@media all and (max-device-width: 720px), (max-width: 720px){
     .sidebar {
         display: none;
     }
-    h4 {
+    .section-header {
         width: 100%;
         left: 0px;
         margin: 0;
@@ -245,8 +281,13 @@ footer button {
         width: 100%;
     }
 
+    .section-content {
+        display: block;
+        padding: 0 30px;
+    }
+
     .section-content-main {
-        width: 95%;
+        width: 90%;
         margin: 10px auto;
         display: block;
     }
@@ -263,30 +304,61 @@ footer button {
     }
 }
 
-
-@media all and (min-device-width: 701px) and (max-device-width: 1200px), (min-width: 701px) and (max-width: 1200px){
-    .sidebar {
-        display: none;
+/*medium devices*/
+@media all and (min-device-width: 721px) and (max-device-width: 1200px), (min-width: 721px) and (max-width: 1200px){
+    
+    header {
+        height: 200px;
     }
-    h4 {
+
+    .main-body {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .sidebar {
+        position:fixed;
+        top:0;
+        left:-250px;
+        opacity: 0.95;
+    }
+
+    .sidebar-tab {
+        display:block;
+        position: absolute;
+        z-index: 1;
+        height: 50px;
+        width: 50px;
+        left: 225px;
+        border-radius: 25px;
+        background-color: #45a29e;
+    }
+
+    .sidebar:hover {
+        left: 0px;
+        cursor: pointer;
+        transition: left 1s ease-in-out 0.1s;
+    }
+
+    .section-header {
         width: 100%;
         left: 0px;
         margin: 0;
         text-align: center;
         border-radius: 0;
     }
-    .main-body {
-        margin: 0;
-        width: 100%;
+
+    .section-content {
+        margin-left: 25px;
+        margin-right: 25px;
     }
 
-    header {
-        height: 200px;
-    }
+
 
 }
 
-@media all and (max-device-height: 600px) and (orientation: landscape){
+/*landscape small devivces*/
+@media all and (max-device-height: 600px) and (orientation: landscape), (max-height: 600px){
     header h2 {
         display: none;
     }
@@ -299,7 +371,7 @@ footer button {
         height: fit-content;
     }
 
-    .footer {
+    footer {
         visibility: hidden;
     }
 }
