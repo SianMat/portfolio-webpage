@@ -178,9 +178,9 @@ header .overlay {
 }
 
 .sidebar-content a {
-    margin: 10px 0;
-    width: 100%;
+    margin: 10px auto;
     padding: 10px;
+    width: fit-content;
     border-radius: 5px;
     display: block;
     color:#66fcf1;
