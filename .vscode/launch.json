@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "d:\\Projects\\portfolio-webpage\\index.html"
+            "file": "d:\\Projects\\SianMat.github.io\\index.html"
         }
     ]
 }
